@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://revisions.wdrixi.workers.dev; object-src 'none'; base-uri 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#15112b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Révisions">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <title>Révisions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="path.css">
+  <link rel="stylesheet" href="td.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+  <header class="titlebar">
+    <div class="tb-left">
+      <div class="logo"><span class="logo-mark"></span>Révisions</div>
+      <div class="tb-course" id="tbCourse"></div>
+    </div>
+    <button class="tb-search" id="openSearch">
+      <span class="ico" data-i="search"></span>
+      <span>Rechercher dans le cours</span>
+      <kbd>Ctrl K</kbd>
+    </button>
+    <div class="tb-right">
+      <div class="hud" id="hud"></div>
+      <button class="wc" id="wcMin" title="Réduire"><span class="ico" data-i="min"></span></button>
+      <button class="wc" id="wcMax" title="Agrandir"><span class="ico" data-i="max"></span></button>
+      <button class="wc wc-close" id="wcClose" title="Fermer"><span class="ico" data-i="x"></span></button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="main" id="main"></main>
+  </div>
+
+  <div class="palette-back" id="paletteBack" hidden>
+    <div class="palette">
+      <div class="palette-input">
+        <span class="ico" data-i="search"></span>
+        <input id="paletteInput" placeholder="Rechercher une notion : CSMA, BGP, MSS, idempotence..." autocomplete="off" spellcheck="false">
+        <kbd>Échap</kbd>
+      </div>
+      <div class="palette-results" id="paletteResults"></div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts"></div>
+
+  <script src="web.js"></script>
+  <script src="icons.js"></script>
+  <script src="vendor/qrcode.js"></script>
+  <script src="config.js"></script>
+  <script src="store.js"></script>
+  <script src="merge.js"></script>
+  <script src="trainers.js"></script>
+  <script src="trainers-algo.js"></script>
+  <script src="trainers-annale.js"></script>
+  <script src="trainers-opti.js"></script>
+  <script src="pas.js"></script>
+  <script src="app.js"></script>
+  <script src="plus.js"></script>
+  <script src="td.js"></script>
+  <script src="tutos.js"></script>
+  <script src="game.js"></script>
+  <script src="path.js"></script>
+  <script src="niveaux.js"></script>
+  <script src="calculs-plus.js"></script>
+  <script src="clair.js"></script>
+  <script src="ateliers.js"></script>
+  <script src="simus.js"></script>
+  <script src="menu.js"></script>
+  <script src="annale.js"></script>
+  <script src="account.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
